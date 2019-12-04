@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Results </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1> Results </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name: </th>
+                <th>Email: </th>
+                <th>PHone NO: </th>
+                <th>Address </th>
+                <th>Birthday </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <% personal.forEach(function(user){ %>
+                <tr>
+                    <td>
+                        <%= user.name %>
+                    </td>
+                    <td>
+                        <%= user.email %>
+                    </td>
+                    <td>
+                        <%= user.phone_no %>
+                    </td>
+                    <td>
+                        <%= user.address %>
+                    </td>
+                    <td>
+                        <%= user.birthday %>
+                    </td>
+
+
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+</body>
+
+</html>
